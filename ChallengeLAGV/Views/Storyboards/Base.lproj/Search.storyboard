@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hCS-hk-APJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Imgur Posts View Controller-->
+        <scene sceneID="HzW-R7-qE0">
+            <objects>
+                <viewController id="IWa-t6-Zbb" customClass="ImgurPostsViewController" customModule="ChallengeLAGV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l1N-Ef-a7j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BSV-8p-bVF">
+                                <rect key="frame" x="5" y="69" width="365" height="593"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WPx-q1-hbB">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImgurCell" id="Y4e-CO-Ftm" customClass="ImgurCell" customModule="ChallengeLAGV" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7H-kn-XLS">
+                                                    <rect key="frame" x="13" y="137" width="124" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ec-5k-Zi0">
+                                                    <rect key="frame" x="5" y="5" width="140" height="90"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gT-l2-Gsr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="140" height="90"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="9gT-l2-Gsr" firstAttribute="top" secondItem="9Ec-5k-Zi0" secondAttribute="top" id="HcX-7z-wf1"/>
+                                                        <constraint firstItem="9gT-l2-Gsr" firstAttribute="leading" secondItem="9Ec-5k-Zi0" secondAttribute="leading" id="Tdl-Yf-ZWs"/>
+                                                        <constraint firstAttribute="bottom" secondItem="9gT-l2-Gsr" secondAttribute="bottom" id="cXl-KA-RW2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9gT-l2-Gsr" secondAttribute="trailing" id="mUd-Nq-3re"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9Ec-5k-Zi0" firstAttribute="leading" secondItem="Y4e-CO-Ftm" secondAttribute="leading" constant="5" id="2CJ-YI-rgR"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="f7H-kn-XLS" secondAttribute="trailing" constant="5" id="WKB-Lu-idh"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Ec-5k-Zi0" secondAttribute="trailing" constant="5" id="XKm-in-kjM"/>
+                                            <constraint firstItem="f7H-kn-XLS" firstAttribute="leading" secondItem="Y4e-CO-Ftm" secondAttribute="leadingMargin" constant="5" id="Z9I-an-Odn"/>
+                                            <constraint firstItem="9Ec-5k-Zi0" firstAttribute="top" secondItem="Y4e-CO-Ftm" secondAttribute="top" constant="5" id="ZFS-7e-4cI"/>
+                                            <constraint firstItem="9Ec-5k-Zi0" firstAttribute="height" secondItem="Y4e-CO-Ftm" secondAttribute="height" multiplier="0.6" id="j1j-SH-gzA"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="f7H-kn-XLS" secondAttribute="bottom" constant="5" id="tKf-3x-3ab"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="imageView" destination="9gT-l2-Gsr" id="NhH-Mx-1Q2"/>
+                                            <outlet property="titleLabel" destination="f7H-kn-XLS" id="nGG-bq-vTC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="IWa-t6-Zbb" id="0S3-KL-Tcb"/>
+                                    <outlet property="delegate" destination="IWa-t6-Zbb" id="rIC-BS-Pm7"/>
+                                    <outlet property="prefetchDataSource" destination="IWa-t6-Zbb" id="uhk-Sq-beR"/>
+                                </connections>
+                            </collectionView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensaje" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-IQ-2m8">
+                                <rect key="frame" x="10" y="320" width="355" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sxE-g7-HoQ" firstAttribute="bottom" secondItem="BSV-8p-bVF" secondAttribute="bottom" constant="5" id="9Gf-hs-ypj"/>
+                            <constraint firstItem="Uog-IQ-2m8" firstAttribute="centerY" secondItem="l1N-Ef-a7j" secondAttribute="centerY" id="MHY-Eu-SZM"/>
+                            <constraint firstItem="BSV-8p-bVF" firstAttribute="top" secondItem="sxE-g7-HoQ" secondAttribute="top" constant="5" id="PUC-Tt-9q9"/>
+                            <constraint firstItem="sxE-g7-HoQ" firstAttribute="trailing" secondItem="Uog-IQ-2m8" secondAttribute="trailing" constant="10" id="Tgf-3W-S1U"/>
+                            <constraint firstItem="BSV-8p-bVF" firstAttribute="leading" secondItem="sxE-g7-HoQ" secondAttribute="leading" constant="5" id="pfK-EL-7nQ"/>
+                            <constraint firstItem="Uog-IQ-2m8" firstAttribute="leading" secondItem="sxE-g7-HoQ" secondAttribute="leading" constant="10" id="prj-CR-r5H"/>
+                            <constraint firstItem="sxE-g7-HoQ" firstAttribute="trailing" secondItem="BSV-8p-bVF" secondAttribute="trailing" constant="5" id="xgj-N5-ymD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sxE-g7-HoQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Msg-Zl-lpl">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" id="5G1-1A-1CG" customClass="ImgurField" customModule="ChallengeLAGV" customModuleProvider="target">
+                            <rect key="frame" x="70" y="7" width="200" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="endEditing:" destination="IWa-t6-Zbb" eventType="editingDidEnd" id="EtD-Xd-n60"/>
+                                <action selector="startEditing:" destination="IWa-t6-Zbb" eventType="editingDidBegin" id="hDc-Q9-VGT"/>
+                            </connections>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="Sn6-RG-LU1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6qd-um-LlL" customClass="ImgurButton" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="search:" destination="IWa-t6-Zbb" eventType="touchUpInside" id="OS5-Es-EgE"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="BSV-8p-bVF" id="5GP-FJ-blS"/>
+                        <outlet property="indicationsLabel" destination="Uog-IQ-2m8" id="ZSl-Uc-d4E"/>
+                        <outlet property="searchField" destination="5G1-1A-1CG" id="48u-r9-Jof"/>
+                        <segue destination="OEq-Tb-c0N" kind="show" identifier="PostDetail" id="61I-HB-iN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSQ-Gl-Zmn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010.4000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iUd-Af-JiD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hCS-hk-APJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rg2-W0-ga0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IWa-t6-Zbb" kind="relationship" relationship="rootViewController" id="8ng-NT-Gr8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpz-5W-V8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="133"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="fIs-rL-TFS">
+            <objects>
+                <viewController id="OEq-Tb-c0N" customClass="ImgurDetailViewController" customModule="ChallengeLAGV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GD4-gj-CJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oeh-zb-eX6">
+                                <rect key="frame" x="37.5" y="233.5" width="300" height="333.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pF-nZ-DGh">
+                                <rect key="frame" x="20" y="126" width="335" height="87.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oeh-zb-eX6" firstAttribute="top" secondItem="6pF-nZ-DGh" secondAttribute="bottom" constant="20" id="3WS-Jz-Cab"/>
+                            <constraint firstItem="6pF-nZ-DGh" firstAttribute="top" secondItem="38S-0w-mR3" secondAttribute="top" constant="10" id="6eE-vN-QCp"/>
+                            <constraint firstItem="Oeh-zb-eX6" firstAttribute="width" secondItem="GD4-gj-CJ6" secondAttribute="width" multiplier="0.8" id="KeJ-nC-CKp"/>
+                            <constraint firstItem="Oeh-zb-eX6" firstAttribute="centerX" secondItem="GD4-gj-CJ6" secondAttribute="centerX" id="dDe-gH-nkQ"/>
+                            <constraint firstItem="Oeh-zb-eX6" firstAttribute="centerY" secondItem="GD4-gj-CJ6" secondAttribute="centerY" multiplier="1.2" id="imc-L0-AwB"/>
+                            <constraint firstItem="38S-0w-mR3" firstAttribute="trailing" secondItem="6pF-nZ-DGh" secondAttribute="trailing" constant="20" id="n0g-xm-BaJ"/>
+                            <constraint firstItem="6pF-nZ-DGh" firstAttribute="leading" secondItem="38S-0w-mR3" secondAttribute="leading" constant="20" id="qAa-t7-RdV"/>
+                            <constraint firstItem="Oeh-zb-eX6" firstAttribute="height" secondItem="GD4-gj-CJ6" secondAttribute="height" multiplier="0.5" id="ynk-qj-L1k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="38S-0w-mR3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Post" largeTitleDisplayMode="always" id="Nap-BI-Za2"/>
+                    <connections>
+                        <outlet property="imageView" destination="Oeh-zb-eX6" id="jxn-uH-TxF"/>
+                        <outlet property="titleLabel" destination="6pF-nZ-DGh" id="zzM-kc-fmt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5gV-gU-Cne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2709.5999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gxi-QO-URu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="BB5-ws-TUv">
+            <objects>
+                <viewController id="gxi-QO-URu" customClass="WelcomeViewController" customModule="ChallengeLAGV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JcD-qx-vTh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lo7-sh-DHh" customClass="ImgurField" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="252" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Pew-03-cid"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRU-Xd-gs9" customClass="ImgurButton" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="142.5" y="322" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="y1x-8l-4MA"/>
+                                </constraints>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="search:" destination="gxi-QO-URu" eventType="touchUpInside" id="y2j-Nq-urk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48h-aC-bEP">
+                                <rect key="frame" x="97.5" y="141.5" width="180" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-WZ-4AZ" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="-50" y="557" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6MV-CU-xtw"/>
+                                    <constraint firstAttribute="height" constant="200" id="6TV-1k-2Pa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="150"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2J-mx-0xW" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="232" y="513" width="240" height="285"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0lJ-9J-wav"/>
+                                    <constraint firstAttribute="height" constant="285" id="nws-GB-z0U"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s6-NL-IVn" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="-125" y="-150" width="240" height="285"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="Ikj-WR-FI0"/>
+                                    <constraint firstAttribute="width" constant="240" id="QVB-Me-JQL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUP-Cn-jxF" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                                <rect key="frame" x="355" y="70" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8rU-N7-9yi"/>
+                                    <constraint firstAttribute="width" constant="200" id="eNK-Dz-Jbh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lo7-sh-DHh" firstAttribute="centerY" secondItem="JcD-qx-vTh" secondAttribute="centerY" multiplier="0.8" id="NBo-1z-sN9"/>
+                            <constraint firstItem="lo7-sh-DHh" firstAttribute="centerX" secondItem="JcD-qx-vTh" secondAttribute="centerX" id="Uai-FR-ioj"/>
+                            <constraint firstAttribute="trailing" secondItem="WUP-Cn-jxF" secondAttribute="trailing" constant="-180" id="UjJ-Rn-nDl"/>
+                            <constraint firstItem="48h-aC-bEP" firstAttribute="centerY" secondItem="JcD-qx-vTh" secondAttribute="centerY" multiplier="0.5" id="VpG-b6-HhL"/>
+                            <constraint firstAttribute="bottom" secondItem="G2J-mx-0xW" secondAttribute="bottom" constant="-131" id="ZLM-fR-NmJ"/>
+                            <constraint firstItem="48h-aC-bEP" firstAttribute="centerX" secondItem="JcD-qx-vTh" secondAttribute="centerX" id="ZkP-1X-it8"/>
+                            <constraint firstItem="5s6-NL-IVn" firstAttribute="leading" secondItem="JcD-qx-vTh" secondAttribute="leading" constant="-125" id="a3G-vn-aBw"/>
+                            <constraint firstItem="3GH-WZ-4AZ" firstAttribute="bottom" secondItem="9sh-dq-1oK" secondAttribute="bottom" constant="90" id="eH9-C9-kzD"/>
+                            <constraint firstItem="5s6-NL-IVn" firstAttribute="top" secondItem="JcD-qx-vTh" secondAttribute="top" constant="-150" id="eLr-a9-9Pe"/>
+                            <constraint firstItem="3GH-WZ-4AZ" firstAttribute="leading" secondItem="9sh-dq-1oK" secondAttribute="leading" constant="-50" id="fOQ-aW-DHY"/>
+                            <constraint firstItem="NRU-Xd-gs9" firstAttribute="centerX" secondItem="JcD-qx-vTh" secondAttribute="centerX" id="fkq-wz-O9n"/>
+                            <constraint firstItem="NRU-Xd-gs9" firstAttribute="top" secondItem="lo7-sh-DHh" secondAttribute="bottom" constant="40" id="j4R-I6-gUa"/>
+                            <constraint firstAttribute="trailing" secondItem="G2J-mx-0xW" secondAttribute="trailing" constant="-97" id="u4h-x1-Oiv"/>
+                            <constraint firstItem="WUP-Cn-jxF" firstAttribute="top" secondItem="9sh-dq-1oK" secondAttribute="top" constant="50" id="vuQ-pv-sv9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9sh-dq-1oK"/>
+                    </view>
+                    <connections>
+                        <outlet property="serachField" destination="lo7-sh-DHh" id="evO-Uw-g0b"/>
+                        <segue destination="kb7-Fa-YK9" kind="show" identifier="SearchSegue" id="Cke-PS-cJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ij2-WW-UzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="101.19940029985008"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="JE3-jX-Faz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="kb7-Fa-YK9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JU0-CK-WWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="101"/>
+        </scene>
+    </scenes>
+</document>
