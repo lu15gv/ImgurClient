@@ -37,7 +37,7 @@ extension ImgurPostsViewController: UICollectionViewDataSource{
 //MARK: - CollectionView Layout
 extension ImgurPostsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.collectionView.frame.width / 2 - 5, height: 150)
+        return CGSize(width: self.collectionView.frame.width / 2 - 5, height: self.collectionView.frame.height / 3)
     }
 }
 
