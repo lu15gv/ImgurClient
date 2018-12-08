@@ -17,8 +17,17 @@ class ImgurCell: UICollectionViewCell {
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet{
             self.layer.cornerRadius = cornerRadius
+        }
+    }
+    @IBInspectable var borderColor: UIColor = UIColor.white {
+        didSet{
             self.layer.borderWidth = 1
-            self.layer.borderColor = UIColor.black.cgColor
+            self.layer.borderColor = borderColor.cgColor
+        }
+    }
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet{
+            self.layer.borderWidth = borderWidth
         }
     }
     func fillWith(_ post: Post, with tag: Int){

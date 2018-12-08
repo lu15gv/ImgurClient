@@ -17,8 +17,12 @@ class ImgurCirclesView: UIView {
     }
     @IBInspectable var borderWidth: CGFloat = 0{
         didSet{
-            self.layer.borderColor = UIColor.black.cgColor
             self.layer.borderWidth = borderWidth
+        }
+    }
+    @IBInspectable var borderColor: UIColor = UIColor.white {
+        didSet{
+            self.layer.borderColor = borderColor.cgColor
         }
     }
 }
