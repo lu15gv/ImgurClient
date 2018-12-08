@@ -25,4 +25,9 @@ class ImgurField: UITextField {
             self.layer.borderColor = borderColor.cgColor
         }
     }
+    @IBInspectable var placeholderColor: UIColor = UIColor.white {
+        didSet{
+            self.attributedPlaceholder = NSAttributedString(string: "Search",attributes: [NSAttributedString.Key.foregroundColor: placeholderColor])
+        }
+    }
 }

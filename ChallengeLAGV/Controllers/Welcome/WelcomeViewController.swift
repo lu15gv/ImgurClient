@@ -15,10 +15,6 @@ class WelcomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTap()
-        setup()
-    }
-    private func setup(){
-        serachField.attributedPlaceholder = NSAttributedString(string: "Search",attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholder")!])
     }
     @IBAction func search(_ sender: Any) {
         if let text = serachField.text, text != ""{
