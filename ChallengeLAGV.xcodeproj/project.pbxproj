@@ -24,7 +24,7 @@
 		EA065E5121BA3AC900F6624B /* ImgurButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5021BA3AC900F6624B /* ImgurButton.swift */; };
 		EA065E5421BA3C2800F6624B /* ImgurField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5321BA3C2800F6624B /* ImgurField.swift */; };
 		EA065E5621BA3CA600F6624B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5521BA3CA600F6624B /* WelcomeViewController.swift */; };
-		EA065E5821BA45EA00F6624B /* ImgurCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5721BA45EA00F6624B /* ImgurCirclesView.swift */; };
+		EA065E5821BA45EA00F6624B /* ImgurCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5721BA45EA00F6624B /* ImgurCustomView.swift */; };
 		EA065E5A21BA4C1800F6624B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5921BA4C1800F6624B /* BaseViewController.swift */; };
 		EA065E5C21BA4DCC00F6624B /* ImgurPostsViewController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065E5B21BA4DCC00F6624B /* ImgurPostsViewController+Collection.swift */; };
 		FC3F3EFD655CF640A733A6F8 /* Pods_ChallengeLAGV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BF13127D0D9B74120090E5 /* Pods_ChallengeLAGV.framework */; };
@@ -53,7 +53,7 @@
 		EA065E5021BA3AC900F6624B /* ImgurButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurButton.swift; sourceTree = "<group>"; };
 		EA065E5321BA3C2800F6624B /* ImgurField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurField.swift; sourceTree = "<group>"; };
 		EA065E5521BA3CA600F6624B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		EA065E5721BA45EA00F6624B /* ImgurCirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurCirclesView.swift; sourceTree = "<group>"; };
+		EA065E5721BA45EA00F6624B /* ImgurCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurCustomView.swift; sourceTree = "<group>"; };
 		EA065E5921BA4C1800F6624B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EA065E5B21BA4DCC00F6624B /* ImgurPostsViewController+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImgurPostsViewController+Collection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,7 +216,7 @@
 			children = (
 				EA065E5321BA3C2800F6624B /* ImgurField.swift */,
 				EA065E5021BA3AC900F6624B /* ImgurButton.swift */,
-				EA065E5721BA45EA00F6624B /* ImgurCirclesView.swift */,
+				EA065E5721BA45EA00F6624B /* ImgurCustomView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 				EA065E4A21BA273E00F6624B /* ImgurDetailViewController.swift in Sources */,
 				EA065E5C21BA4DCC00F6624B /* ImgurPostsViewController+Collection.swift in Sources */,
 				EA065E5A21BA4C1800F6624B /* BaseViewController.swift in Sources */,
-				EA065E5821BA45EA00F6624B /* ImgurCirclesView.swift in Sources */,
+				EA065E5821BA45EA00F6624B /* ImgurCustomView.swift in Sources */,
 				EA065E5621BA3CA600F6624B /* WelcomeViewController.swift in Sources */,
 				EA065E5121BA3AC900F6624B /* ImgurButton.swift in Sources */,
 				6631B2FD21BB59BA00415E70 /* ImgurParse.swift in Sources */,

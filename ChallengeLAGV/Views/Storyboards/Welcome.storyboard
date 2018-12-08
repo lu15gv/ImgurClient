@@ -34,9 +34,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="white"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" name="placeholder"/>
                                     </userDefinedRuntimeAttribute>
@@ -58,9 +55,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="white"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="search:" destination="gxi-QO-URu" eventType="touchUpInside" id="y2j-Nq-urk"/>
@@ -72,7 +66,7 @@
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-WZ-4AZ" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-WZ-4AZ" customClass="ImgurCustomView" customModule="ChallengeLAGV" customModuleProvider="target">
                                 <rect key="frame" x="-50" y="557" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="6MV-CU-xtw"/>
@@ -90,7 +84,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2J-mx-0xW" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2J-mx-0xW" customClass="ImgurCustomView" customModule="ChallengeLAGV" customModuleProvider="target">
                                 <rect key="frame" x="232" y="513" width="240" height="285"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -106,7 +100,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s6-NL-IVn" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s6-NL-IVn" customClass="ImgurCustomView" customModule="ChallengeLAGV" customModuleProvider="target">
                                 <rect key="frame" x="-125" y="-150" width="240" height="285"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="285" id="Ikj-WR-FI0"/>
@@ -124,7 +118,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUP-Cn-jxF" customClass="ImgurCirclesView" customModule="ChallengeLAGV" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUP-Cn-jxF" customClass="ImgurCustomView" customModule="ChallengeLAGV" customModuleProvider="target">
                                 <rect key="frame" x="355" y="70" width="200" height="200"/>
                                 <color key="backgroundColor" name="orange"/>
                                 <constraints>

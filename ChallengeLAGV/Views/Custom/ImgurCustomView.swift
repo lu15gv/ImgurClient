@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ImgurCirclesView: UIView {
+class ImgurCustomView: UIView {
     @IBInspectable var cornerRadius: CGFloat = 0{
         didSet{
             self.layer.cornerRadius = cornerRadius

@@ -18,11 +18,7 @@ class ImgurField: UITextField {
     @IBInspectable var borderWidth: CGFloat = 0{
         didSet{
             self.layer.borderWidth = borderWidth
-        }
-    }
-    @IBInspectable var borderColor: UIColor = UIColor.white {
-        didSet{
-            self.layer.borderColor = borderColor.cgColor
+            self.layer.borderColor = UIColor(named: "blue")?.cgColor
         }
     }
     @IBInspectable var placeholderColor: UIColor = UIColor.white {
