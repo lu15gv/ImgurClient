@@ -17,6 +17,7 @@ class ImgurParse {
             let title = postDic["title"] as? String
             let link = postDic["link"] as? String
             let type = postDic["type"] as? String
+            let points = postDic["points"] as? Int
             
             if let imagesDic = postDic["images"] as? [[String:Any]]{
                 var images = [Image]()
@@ -27,9 +28,9 @@ class ImgurParse {
                     let image = Image(type: typeImage, description: descriptionImage, link: linkImage)
                     images.append(image)
                 }
-                posts.append(Post(title: title, images: images, link: link, type: type))
+                posts.append(Post(title: title, images: images, link: link, type: type, points: points))
             }else{
-                posts.append(Post(title: title, images: nil, link: link, type: type))
+                posts.append(Post(title: title, images: nil, link: link, type: type, points: points))
             }
         }
         return posts

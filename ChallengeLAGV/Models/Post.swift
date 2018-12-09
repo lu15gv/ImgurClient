@@ -16,14 +16,21 @@ class Post {
     let images:[Image]?
     let link: String?
     let type: String?
+    let points: Int
     var thumbnail: UIImage?
     var dowloadImagetask: URLSessionTask?
     
-    init(title: String?, images: [Image]?, link: String?, type: String?) {
+    init(title: String?, images: [Image]?, link: String?, type: String?, points: Int?) {
         self.title = title
         self.images = images
         self.link = link
         self.type = type
+        if let points = points{
+            self.points = points
+        }else{
+            self.points = 0
+        }
+        
     }
     
     func getThumnailURL() -> (isVideo: Bool, url: URL?){

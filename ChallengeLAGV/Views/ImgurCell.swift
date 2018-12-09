@@ -14,6 +14,7 @@ class ImgurCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var likesLabel: UILabel!
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet{
             self.layer.cornerRadius = cornerRadius
@@ -32,6 +33,7 @@ class ImgurCell: UICollectionViewCell {
     }
     func fillWith(_ post: Post, with tag: Int){
         titleLabel.text = post.title
+        likesLabel.text = String(post.points)
         setThumbnail(of: post, with: tag)
     }
     func setThumbnail(of post: Post, with tag: Int){
